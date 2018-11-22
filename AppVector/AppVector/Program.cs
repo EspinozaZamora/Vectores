@@ -26,6 +26,7 @@ namespace AppVector
                 Console.WriteLine("Error: " + ex.Message.ToString());
             }
             Console.WriteLine("2 elevado a la 5 es igual a : {0}", Potencia(2, 5));
+            Calificacion(10);
 
             Console.ReadKey();
         }
@@ -48,6 +49,25 @@ namespace AppVector
                 
             }
             return p;
+        }
+        public static float Calificacion(float c)
+        {
+            int x = 2;
+            if (c > 0 && c < 5)
+                Console.WriteLine("\nsuspenso");
+            else
+                 if (c > 4 && c < 6.6)
+                Console.WriteLine("\naprovado");
+            else
+                 if (c > 6.4 && c < 8.6)
+                Console.WriteLine("\nNotable");
+            else
+                 if (c > 8.4 && c < 10)
+                Console.WriteLine("\nsobresaliente");
+            else
+                 if (c == 10)
+                Console.WriteLine("\nMatricula de Honor");
+            return (x);
         }
     }
 }
