@@ -28,6 +28,8 @@ namespace AppVector
             Console.WriteLine("2 elevado a la 5 es igual a : {0}", Potencia(2, 5));
             Calificacion(10);
 
+            vectorInicializar();
+
             Console.ReadKey();
         }
 
@@ -68,6 +70,39 @@ namespace AppVector
                  if (c == 10)
                 Console.WriteLine("\nMatricula de Honor");
             return (x);
+        }
+
+        public static void vectorInicializar()
+        {
+            int suma = 0;
+            double Promedio;
+            int[] x = new int[8];
+            x[0] = 10;
+            x[1] = 2;
+            x[2] = 20;
+            x[3] = 8;
+            x[4] = 15;
+            x[5] = 1;
+            x[6] = -9;
+            x[7] = 14;
+            //imprimir el vector
+            Console.WriteLine("\n Elementos del Vector \n======================\n");
+            for (int i = 0; i < 8; i++)
+            {
+                Console.WriteLine("Elemento indice {0} --> {1}", (i + 1), x[i]);
+            }
+            for (int i = 0; i < x.Length; i++)
+            {
+                suma = suma + x[i];
+            }
+            Promedio = suma / x.Length;
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("La suma de todos los valores es: {0}", suma);
+            Console.WriteLine("El Promedio de es es: {0}", (double)Promedio);
+
+
+
+
         }
     }
 }
