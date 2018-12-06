@@ -29,6 +29,8 @@ namespace AppVector
             Calificacion(10);
 
             vectorInicializar();
+            Vectores();
+            Vectores1();
 
             Console.ReadKey();
         }
@@ -103,6 +105,51 @@ namespace AppVector
 
 
 
+
         }
+        public static void Vectores()
+        {
+            int num;
+            int may = 0;
+            int[] x = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                do
+                {
+                    Console.WriteLine("Ingrese un numero");
+                    num = int.Parse(Console.ReadLine());
+                    x[i] = num;
+                }
+                while (num < 0 || num > 1001);
+                if (may <= x[i])
+                {
+                    may = x[i];
+                }
+            }
+             Console.WriteLine("El Promedio de es es: {0}", may);
+        }
+        public static void Vectores1()
+        {
+            int num;
+            int men = 500000;
+            int[] x = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                do
+                {
+                    Console.WriteLine("Ingrese un numero");
+                    num = int.Parse(Console.ReadLine());
+                    x[i] = num;
+                }
+                while (num < 0 || num > 1001);
+                if (may >= x[i])
+                {
+                    may = x[i];
+                }
+            }
+             Console.WriteLine("El Promedio de es es: {0}", may);
+        }
+       
+        
     }
 }
