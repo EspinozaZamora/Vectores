@@ -147,7 +147,7 @@ namespace AppVector
                     may = x[i];
                 }
             }
-             Console.WriteLine("El Promedio de es es: {0}", may);
+             Console.WriteLine("El Promedio de es es: {0}", men);
         }
        
         
